@@ -1,0 +1,39 @@
+.faqDiv {
+  margin-bottom: 5rem;
+}
+
+.singlefaq {
+  border-bottom: 3px solid var(--white);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.subject {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.subject h6 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.singlefaq p {
+  display: none;
+  margin: 5px 0;
+}
+
+.singlefaq p.active {
+  display: block;
+}
+
+@media (max-width: 520px) {
+  .subject h6 {
+    font-size: 3.5vw;
+  }
+
+  .singlefaq p {
+    font-size: 3vw;
+  }
+}

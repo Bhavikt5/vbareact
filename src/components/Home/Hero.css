@@ -1,0 +1,53 @@
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+}
+.hero .left {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero .left h1 {
+  color: var(--pink);
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.hero .left p {
+  margin: 2rem;
+  font-size: 1.3vw;
+  letter-spacing: 2px;
+}
+
+.hero .right {
+  flex: 1;
+}
+
+.hero .right img {
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero .right img {
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .hero .left h1 {
+    font-size: 7vw;
+    margin-top: 1rem;
+  }
+  .hero .left p {
+    margin: 1rem;
+    font-size: 4vw;
+    text-align: center;
+  }
+}
